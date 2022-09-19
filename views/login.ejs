@@ -1,0 +1,55 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='style.css'>
+        <title>Login</title>
+    </head>
+
+    <body>
+
+        <div class="container left ">
+            <div>
+                <img src="draw2.png" width="100%" height="100%">
+            </div>
+
+        </div>
+        
+
+        <div class="container right" >
+            <form action="/login" method="post">
+                <div>
+                  <h3>Sign in with <img src="allinone (2).png" width="20%" height="20%">   Or</h3> 
+                 
+                </div>
+
+                <div class="field">
+                  <input type="email" name="email" id="email" placeholder="Email address"/>
+                  <br />
+                </div>
+
+                <div class="field">
+                  <input type="password" name="password" id="password" required placeholder="Password" />
+                </div>
+
+                <h3><pre class="tab" ><input type="checkbox" >Remember me           Forgot password?</pre></h3><br>
+
+                <div class="field">
+                  <input class="button" type="submit" value="LOGIN" required />
+                </div>
+
+                <h3>Don't have an account? <span style="color: red">Register</span></h3>
+
+
+                <label id="error-message"></label>
+
+              </form>
+
+        </div>
+
+        
+    </body>
+
+</html>

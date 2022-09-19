@@ -1,0 +1,63 @@
+.container 
+{
+
+	width: 47%;
+	height: 150%;
+	margin: auto;
+	padding: 150px 0;
+	
+}
+
+.left
+{
+	float:left
+}
+
+.right
+{
+	float:right
+}
+
+.button 
+{
+	font-family: "Arial";
+	background: blue;
+	color: white;
+	font-size: 20px;
+	border-radius: 7px;
+	border-color: blue;
+	width: 5cm;
+	padding: 16px 25px 16px 25px;
+}
+
+
+h3
+{
+	font-family: "Arial";	
+}
+
+input[type=text], select {
+	width: 50%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+  }
+
+  div {
+	border-radius: 5px;
+	padding: 20px;
+  }
+
+  .clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+
+  .tab {
+	font-family: "Arial";
+	tab-size: 2;
+}

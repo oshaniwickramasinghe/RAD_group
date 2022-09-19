@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Upload </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div  >
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        
+        <div class="field">
+            <labal><h3>Email address</h3></labal>
+            <input type="text" name="email" />
+          <br />
+        </div>
+
+        <div class="field">
+            <labal><h3>Full name</h3></labal>
+            <input type="text" name="name"/>
+        </div>
+
+        <div class="field">
+            <labal><h3>Message</h3></labal>
+            <input type="text" name="message"/>
+        </div>
+
+        <div class="field">
+            <labal><h3>Photo</h3></labal>
+            <input type="file" name="avatar" id="avatar"/>
+        </div>
+        
+
+        <div class="field">
+          <input class="button" type="submit" value="Submit" required />
+        </div>
+
+      </form>
+
+</div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const info = urlParams.get('info');
+
+    if(info) {
+      const errorMessage = document.getElementById("error-message");
+      errorMessage.innerText = info;
+      errorMessage.style.display = "block";
+    }
+  </script>
+</body>
+</html>
